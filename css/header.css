@@ -26,6 +26,14 @@ input[type="checkbox"]:checked ~ nav {
     height: 64px;
 }
 
+.logo-mobile {
+    display: block;
+}
+
+.logo-desktop {
+    display: none;
+}
+
 nav {display: none;}
 
 .list-links {
@@ -66,5 +74,23 @@ nav {display: none;}
 
     .navigation-menu li {
         margin: 0;
+    }
+
+    .navigation-menu li a:hover {
+        color: var(--primary-color);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .logo {
+        width: 260px;
+        height: 64px;
+    }
+    .logo-desktop {
+        display: block;
+    }
+
+    .logo-mobile {
+        display: none;
     }
 }
