@@ -7,18 +7,35 @@
     background-repeat: no-repeat;
 }
 
+.hero h2 {
+    padding: 88px 60px;
+    margin: 0;
+    font-weight: var(--text-weigth);
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.5;
+}
+
 @media screen and (min-width: 768px) {
     .hero-img {
         height: 620px;
         background: url('../img/hero-tablet.png') no-repeat center center;
         background-size: cover;
     }
+    
+    .hero h2 {
+        padding: 88px 120px;
+        font-size: 32px;
+    }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1920px) {
     .hero-img {
         height: 620px;
         background: url('../img/hero-desktop.png') no-repeat center center;
         background-size: cover;
+    }
+        .hero h2 {
+        padding: 88px 160px;
     }
 }
